@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>  
+<html>  
+<link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">  
+  <head>  
+    <meta name="viewport" content="width=320; user-scalable=no" />  
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">  
+    <title>PhoneGap</title>  
+              <script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>  
+              <script type="text/javascript" charset="utf-8">  
+              var displayHello = function() {  
+                        var name = document.getElementById("firstname").value; 
+                        var name1= document.getElementById("secondname").value;
+                         navigator.notification.alert("name: " + name + " " + name1);  
+                         
+            }  
+   </script>  
+  </head>  
+  <body onload="init();" id="bdy" >  
+            <div id="txt">  
+            <input type="text" name="firstname" id="firstname" /> 
+            <input type="text" name="secondname" id="secondname"/>
+             </div>  
+                                     
+            <div id ="btn">  
+      	<a href="#" class="btn" onclick="displayHello();">Say Hello</a>  
+    		
+            </div>  
+          
+  </body>  
+</html>  
